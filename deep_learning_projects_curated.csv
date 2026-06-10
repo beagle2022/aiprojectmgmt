@@ -1,0 +1,36 @@
+﻿Category,Project Title,Project Description
+RAG and Knowledge Assistants,Company Policy and SOP Assistant,"Build a chatbot that answers questions from company policies, manuals, or standard operating procedures."
+RAG and Knowledge Assistants,Product-Catalog and Troubleshooting Bot,Use product manuals and FAQ documents to answer questions about product features and common issues.
+RAG and Knowledge Assistants,Engineering Manual Assistant,Create a RAG assistant for equipment manuals and safety guidelines.
+RAG and Knowledge Assistants,Confidential Document Assistant,"Build a fully local RAG system using a local embedding model, FAISS or Chroma, and a small local language model."
+RAG and Knowledge Assistants,Finance Knowledge Assistant,"Use annual reports, accounting policies, and financial documents to answer business-related questions with citations."
+RAG and Knowledge Assistants,Tabular RAG for Business Reports,"Query spreadsheets containing sales, inventory, cost, and profitability data using natural language."
+Predictive Analytics and Time-Series Forecasting,Retail Demand Forecasting,"Predict future product sales using historical data, promotions, and seasonal patterns."
+Predictive Analytics and Time-Series Forecasting,Sales-Planning Dashboard,Forecast monthly sales by region or product and visualize historical and predicted trends.
+Predictive Analytics and Time-Series Forecasting,Energy-Consumption Forecasting,Predict hourly or daily electricity usage for a building or factory.
+Predictive Analytics and Time-Series Forecasting,Dynamic Price-Optimization Engine,Estimate demand at different price levels and recommend candidate prices under business constraints.
+Predictive Analytics and Time-Series Forecasting,Equipment-Failure Prediction,"Use sensor readings such as vibration, temperature, and pressure to predict machine failures."
+Predictive Analytics and Time-Series Forecasting,Employee-Attrition and Cost Analysis,Predict employee attrition risk and estimate the potential cost of likely departures.
+Predictive Analytics and Time-Series Forecasting,Procurement Should-Cost Estimator,Estimate an expected price range for a product or component and flag unusual supplier quotations.
+Computer Vision and Multimodal AI,Visual Quality Inspection for Manufacturing,Train a CNN to classify manufactured components as normal or defective.
+Computer Vision and Multimodal AI,Healthcare Image-Classification Demonstrator,Use a public dataset of medical images to train a classifier and visualize important image regions using Grad-CAM.
+Computer Vision and Multimodal AI,Retail Shelf-Monitoring System,Detect products and identify empty shelf spaces in store images.
+Computer Vision and Multimodal AI,Medical-Image Segmentation Demonstrator,"Train a U-Net to segment an organ, tumour, lesion, or blood vessel from medical images."
+Computer Vision and Multimodal AI,Intelligent Invoice and Receipt Reader,"Extract vendor name, invoice number, date, tax amount, and total amount from scanned documents."
+Computer Vision and Multimodal AI,Product Search Using Text and Images,Use a CLIP-style model to retrieve products using either a text query or an uploaded image.
+Computer Vision and Multimodal AI,Facial-Authentication Demonstrator,Compare captured face images with enrolled reference images using face embeddings.
+NLP and Educational AI,Automated MCQ Generator,"Generate multiple-choice questions, distractors, answers, and explanations from textbook chapters or PDF documents."
+NLP and Educational AI,Product-Review Sentiment and Complaint Analyzer,Identify customer sentiment and summarize common complaints from product reviews.
+NLP and Educational AI,Customer-Complaint Router,"Classify support tickets into categories such as billing, delivery, warranty, and technical support."
+NLP and Educational AI,Fake-News Classification and Evidence Retrieval,Classify potentially misleading articles and retrieve relevant evidence from trusted documents.
+NLP and Educational AI,Language-Translation Assistant,Compare an RNN with attention against a transformer model for a limited translation task.
+NLP and Educational AI,Resume–Job Description Matcher,Rank resumes against a job description using semantic embeddings and highlight relevant skills.
+"Agentic AI, Cybersecurity, and Deployment",Customer-Support Resolution Agent,"Build an agent that classifies a complaint, searches documentation, and drafts a response for human approval."
+"Agentic AI, Cybersecurity, and Deployment",AI Project-Management Copilot,"Extract tasks, deadlines, and owners from meeting notes and generate a weekly summary."
+"Agentic AI, Cybersecurity, and Deployment",TinyML or Raspberry Pi Classifier,"Deploy a lightweight image, audio, or sensor-classification model on a Raspberry Pi or laptop CPU."
+"Agentic AI, Cybersecurity, and Deployment",SOP-Driven Workflow Agent,"Automate a repetitive process such as invoice verification, onboarding, or service-ticket handling."
+"Agentic AI, Cybersecurity, and Deployment",Retail-Shop Operations Agent,"Create an assistant that checks inventory, recommends products, prepares a draft invoice, and flags low-stock items."
+"Agentic AI, Cybersecurity, and Deployment",Procurement Comparison Agent,Extract specifications and prices from quotations and generate a structured vendor-comparison report.
+"Agentic AI, Cybersecurity, and Deployment",Network-Anomaly and DDoS Early-Warning System,Use network-traffic features to detect unusual activity and study the trade-off between detection rate and false alarms.
+"Agentic AI, Cybersecurity, and Deployment",Secure-Access Risk Scoring,Train a model to flag unusual access requests using synthetic login and resource-access logs.
+"Agentic AI, Cybersecurity, and Deployment",Production-Ready AI Service with Monitoring,"Deploy a trained model through FastAPI and add validation, logging, confidence thresholds, and basic drift monitoring."

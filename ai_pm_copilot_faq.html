@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI PM Copilot — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #0a0e0d;
+  --bg2:       #111715;
+  --bg3:       #17211e;
+  --panel:     #1a2520;
+  --border:    #2a3d36;
+  --accent:    #00e5a0;
+  --accent2:   #00c283;
+  --accent-dim:#00e5a020;
+  --muted:     #3a5448;
+  --text:      #d4e8df;
+  --text2:     #7a9e90;
+  --text3:     #4a6e60;
+  --tag-bg:    #0d2318;
+  --tag-text:  #00e5a0;
+  --warn:      #f5a623;
+  --warn-dim:  #f5a62315;
+  --err:       #ff5c5c;
+  --err-dim:   #ff5c5c15;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Grid noise texture overlay ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% 10%, #00e5a008 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, #00e5a006 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Header ── */
+header {
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-mark {
+  width: 32px; height: 32px;
+  background: var(--accent);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #0a0e0d;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+.header-badge {
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid var(--accent)30;
+  border-radius: 4px;
+  padding: 3px 10px;
+  letter-spacing: 0.06em;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  padding: 80px 48px 64px;
+  border-bottom: 1px solid var(--border);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: 'FAQ';
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 180px;
+  color: var(--border);
+  letter-spacing: -8px;
+  line-height: 1;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -2px;
+  color: var(--text);
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+h1 em {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-desc {
+  color: var(--text2);
+  max-width: 480px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ── Layout ── */
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: calc(100vh - 280px);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Sidebar ── */
+aside {
+  border-right: 1px solid var(--border);
+  padding: 32px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.aside-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding: 0 24px 12px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 24px;
+  font-size: 12px;
+  color: var(--text2);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all .15s;
+}
+
+nav a:hover {
+  color: var(--text);
+  background: var(--bg2);
+  border-left-color: var(--muted);
+}
+
+nav a.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+nav a .nav-icon {
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+}
+
+.nav-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 12px 24px;
+}
+
+/* ── Main content ── */
+main {
+  padding: 48px 56px;
+  max-width: 860px;
+}
+
+/* ── Category heading ── */
+.category {
+  margin-bottom: 48px;
+}
+
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cat-icon {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cat-icon.green  { background: #00e5a015; }
+.cat-icon.amber  { background: #f5a62315; }
+.cat-icon.blue   { background: #4a9eff15; }
+.cat-icon.red    { background: #ff5c5c15; }
+.cat-icon.purple { background: #a855f715; }
+.cat-icon.teal   { background: #00c8c815; }
+
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+.cat-count {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text3);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2px 10px;
+}
+
+/* ── FAQ item ── */
+.faq {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: var(--bg2);
+  overflow: hidden;
+  transition: border-color .2s;
+}
+
+.faq:hover { border-color: var(--muted); }
+.faq.open  { border-color: var(--accent)50; }
+
+.faq-q {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-q::-webkit-details-marker { display: none; }
+
+.q-marker {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--accent);
+  line-height: 1;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.q-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.faq-chevron {
+  width: 20px; height: 20px;
+  border-radius: 4px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: var(--text3);
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: all .2s;
+}
+
+details[open] .faq-chevron {
+  background: var(--accent-dim);
+  border-color: var(--accent)50;
+  color: var(--accent);
+  transform: rotate(180deg);
+}
+
+.faq-a {
+  padding: 0 20px 20px 48px;
+  color: var(--text2);
+  line-height: 1.8;
+  font-size: 13.5px;
+  border-top: 1px solid var(--border);
+  margin: 0 0 0;
+  padding-top: 16px;
+}
+
+.faq-a p { margin-bottom: 10px; }
+.faq-a p:last-child { margin-bottom: 0; }
+
+/* ── Code blocks ── */
+.faq-a code {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: var(--accent);
+}
+
+.faq-a pre {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 12px 0;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.faq-a pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* ── Callout boxes ── */
+.callout {
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.callout.tip   { background: var(--accent-dim); border: 1px solid var(--accent)30; }
+.callout.warn  { background: var(--warn-dim);   border: 1px solid var(--warn)30; color: #e8c890; }
+.callout.err   { background: var(--err-dim);    border: 1px solid var(--err)30;  color: #f0a0a0; }
+
+.callout-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.callout.tip  .callout-body { color: #90d8b8; }
+
+/* ── Tags ── */
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+.tag {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--accent)25;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+/* ── Steps list ── */
+.steps { counter-reset: step; list-style: none; margin: 10px 0; }
+.steps li {
+  counter-increment: step;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+.steps li::before {
+  content: counter(step);
+  font-family: 'Syne', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  width: 22px; height: 22px;
+  background: var(--accent);
+  color: #0a0e0d;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Footer ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text3);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-right { display: flex; gap: 24px; }
+.footer-right a { color: var(--text3); text-decoration: none; }
+.footer-right a:hover { color: var(--accent); }
+
+/* ── Search bar ── */
+.search-wrap {
+  padding: 32px 56px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.search-inner {
+  position: relative;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text3);
+  font-size: 14px;
+}
+
+#search {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px 10px 38px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s;
+}
+
+#search::placeholder { color: var(--text3); }
+#search:focus { border-color: var(--accent)60; }
+
+#search-count {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: var(--text3);
+}
+
+.faq.hidden { display: none; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.category { animation: fadeUp .4s ease both; }
+.category:nth-child(1) { animation-delay: .05s; }
+.category:nth-child(2) { animation-delay: .10s; }
+.category:nth-child(3) { animation-delay: .15s; }
+.category:nth-child(4) { animation-delay: .20s; }
+.category:nth-child(5) { animation-delay: .25s; }
+.category:nth-child(6) { animation-delay: .30s; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <div class="logo-mark">AI</div>
+    <div>
+      <div class="logo-text">PM Copilot</div>
+      <div class="logo-sub">Documentation</div>
+    </div>
+  </div>
+  <div class="header-badge">v1.0 · FAQ</div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-eyebrow">Frequently Asked Questions</div>
+  <h1>Everything you need<br>to know about the<br><em>Copilot</em></h1>
+  <p class="hero-desc">Setup, usage, agents, memory, integrations, and troubleshooting — all in one place.</p>
+</div>
+
+<!-- Search -->
+<div class="search-wrap">
+  <div class="search-inner">
+    <span class="search-icon">⌕</span>
+    <input id="search" type="text" placeholder="Search questions…" autocomplete="off">
+    <span id="search-count"></span>
+  </div>
+</div>
+
+<!-- Layout -->
+<div class="layout">
+
+  <!-- Sidebar nav -->
+  <aside>
+    <div class="aside-label">Categories</div>
+    <nav id="nav">
+      <a href="#setup" class="active"><span class="nav-icon">⚙</span>Setup & Installation</a>
+      <a href="#running"><span class="nav-icon">▶</span>Running the App</a>
+      <a href="#agents"><span class="nav-icon">◈</span>Agents & Routing</a>
+      <a href="#memory"><span class="nav-icon">◉</span>Memory System</a>
+      <a href="#integrations"><span class="nav-icon">⇄</span>Integrations</a>
+      <a href="#errors"><span class="nav-icon">⚠</span>Errors & Fixes</a>
+    </nav>
+    <div class="nav-divider"></div>
+    <nav>
+      <a href="#" onclick="expandAll(); return false"><span class="nav-icon">↕</span>Expand all</a>
+      <a href="#" onclick="collapseAll(); return false"><span class="nav-icon">↕</span>Collapse all</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- ── Setup ── -->
+    <section class="category" id="setup">
+      <div class="cat-header">
+        <div class="cat-icon green">⚙</div>
+        <h2>Setup &amp; Installation</h2>
+        <span class="cat-count">6 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What are the system requirements?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>The copilot requires Python 3.11 or higher. It has been tested on Python 3.11, 3.12, and 3.14.</p>
+          <div class="tags"><span class="tag">Python 3.11+</span><span class="tag">Windows / Mac / Linux</span></div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I install dependencies?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <ol class="steps">
+            <li>Navigate into the project folder: <code>cd AI-CapstoneProjects</code></li>
+            <li>Install from the requirements file: <code>pip install -r requirements.txt</code></li>
+          </ol>
+          <p>The three core dependencies are <code>anthropic</code>, <code>python-dotenv</code>, and <code>requests</code>. No LangChain or heavy ML frameworks required.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I set up my API key?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <ol class="steps">
+            <li>Copy the template: <code>copy .env.example .env</code> (Windows) or <code>cp .env.example .env</code> (Mac/Linux)</li>
+            <li>Open <code>.env</code> in any text editor</li>
+            <li>Replace the placeholder with your real key from <code>console.anthropic.com</code></li>
+          </ol>
+          <pre><code>ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxx</code></pre>
+          <div class="callout warn">
+            <span class="callout-icon">⚠</span>
+            <div class="callout-body">Do not add quotes or spaces around the key. <code>ANTHROPIC_API_KEY="sk-ant-..."</code> will fail.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Where do I get an Anthropic API key?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <ol class="steps">
+            <li>Visit <code>console.anthropic.com</code> and sign in</li>
+            <li>Click <strong>API Keys</strong> in the left sidebar</li>
+            <li>Click <strong>Create Key</strong> and copy the full key</li>
+            <li>Paste it into your <code>.env</code> file</li>
+          </ol>
+          <p>The key starts with <code>sk-ant-</code> and is approximately 100 characters long.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What is the correct folder structure?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>AI-CapstoneProjects\
+├── main.py              ← entry point (run THIS)
+├── .env                 ← your API key
+├── requirements.txt
+├── conftest.py
+├── pyproject.toml
+└── copilot\
+    ├── __init__.py
+    ├── __main__.py
+    ├── config.py
+    ├── memory.py
+    ├── orchestrator.py
+    ├── agents.py
+    └── tools.py</code></pre>
+          <div class="callout warn">
+            <span class="callout-icon">⚠</span>
+            <div class="callout-body"><code>main.py</code> must be in the root folder, NOT inside the <code>copilot\</code> subfolder.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Can I install it as a package instead?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Yes. Installing in editable mode makes imports work from any directory:</p>
+          <pre><code>cd AI-CapstoneProjects
+pip install -e .</code></pre>
+          <p>After this you can also run the copilot via <code>pm-copilot</code> or <code>python -m copilot</code> from anywhere on your system.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ── Running ── -->
+    <section class="category" id="running">
+      <div class="cat-header">
+        <div class="cat-icon amber">▶</div>
+        <h2>Running the App</h2>
+        <span class="cat-count">5 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I start the copilot?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>cd AI-CapstoneProjects
+python main.py</code></pre>
+          <p>You will see the startup banner and a <code>You ›</code> prompt where you type your requests in plain English.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Are there command-line parameters?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>No. The app runs as an interactive REPL. All input is typed at the <code>You ›</code> prompt after launch. The only environment-level option is passing the API key inline:</p>
+          <pre><code># Windows PowerShell
+$env:ANTHROPIC_API_KEY="sk-ant-xxx"; python main.py
+
+# Mac / Linux
+ANTHROPIC_API_KEY=sk-ant-xxx python main.py</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What commands can I type at the prompt?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Three built-in commands are available at the <code>You ›</code> prompt:</p>
+          <pre><code>memory    → print the current long-term memory store
+exit      → quit the application
+Ctrl+C    → also quits</code></pre>
+          <p>Everything else is treated as a natural language request and sent to the orchestrator.</p>
+          <div class="tags"><span class="tag">memory</span><span class="tag">exit</span><span class="tag">Ctrl+C</span></div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What are some example questions I can ask?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>You › Plan the next sprint
+You › What are the risks this sprint?
+You › Write user stories for the authentication feature
+You › Review the latest pull request
+You › Generate today's standup digest
+You › When is the next sprint meeting?
+You › What did we decide about the database last week?</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I run the tests?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>cd AI-CapstoneProjects
+python -m pytest tests/ -v</code></pre>
+          <p>All 19 tests should pass. Tests use mocked Anthropic API calls so no API key is needed to run them.</p>
+          <div class="callout tip">
+            <span class="callout-icon">✦</span>
+            <div class="callout-body">Run <code>pip install pytest</code> first if pytest is not installed.</div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ── Agents ── -->
+    <section class="category" id="agents">
+      <div class="cat-header">
+        <div class="cat-icon blue">◈</div>
+        <h2>Agents &amp; Routing</h2>
+        <span class="cat-count">5 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What specialist agents are available?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Five specialist agents are built in:</p>
+          <pre><code>requirements    → PRDs, user stories, acceptance criteria
+sprint_planner  → backlog ranking, velocity, sprint plans
+risk_analyst    → blockers, dependencies, deadline risk
+code_reviewer   → PR analysis, bug flags, quality gate
+standup         → daily digest, nudges, status summary</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How does the orchestrator decide which agent to call?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>The orchestrator sends your message to the reasoning model with a routing prompt. The model returns a JSON object specifying which agents to invoke:</p>
+          <pre><code>{"intent": "plan sprint", "agents": ["sprint_planner"], "context_needed": ["tickets"]}</code></pre>
+          <p>If no agent matches (e.g. casual chat), the orchestrator answers directly without invoking any specialist.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Can multiple agents run at the same time?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Yes. The orchestrator can dispatch multiple agents for a single request. For example, "what are the risks and how should I adjust the sprint?" will invoke both <code>risk_analyst</code> and <code>sprint_planner</code>. Their outputs are merged by the orchestrator into a single coherent response.</p>
+          <div class="callout tip">
+            <span class="callout-icon">✦</span>
+            <div class="callout-body">Current implementation dispatches agents sequentially. Parallel execution is a planned extension.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Which LLM model does each agent use?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>code_reviewer   → CODE_MODEL   (set in .env, default: claude-sonnet-4-20250514)
+all other agents → REASONING_MODEL (set in .env, default: claude-sonnet-4-20250514)</code></pre>
+          <p>You can override either model in your <code>.env</code> file:</p>
+          <pre><code>REASONING_MODEL=claude-opus-4-20250514
+CODE_MODEL=claude-sonnet-4-20250514</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What is the review gate?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>After agents return results, the orchestrator runs a quality check. If the combined response is incomplete or ambiguous, it triggers one automatic retry with a refined sub-query. If the second attempt still falls short, the best available answer is returned anyway.</p>
+          <pre><code>{"status": "approved"}               → response returned to user
+{"status": "retry", "refined_query": "..."} → one retry triggered</code></pre>
+        </div>
+      </details>
+    </section>
+
+    <!-- ── Memory ── -->
+    <section class="category" id="memory">
+      <div class="cat-header">
+        <div class="cat-icon purple">◉</div>
+        <h2>Memory System</h2>
+        <span class="cat-count">5 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What is the difference between short-term and long-term memory?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p><strong>Short-term memory (STM)</strong> is the active context window for the current session — conversation turns, tool outputs, and retrieved memories. It is wiped when the session ends.</p>
+          <p><strong>Long-term memory (LTM)</strong> is persisted to disk as <code>data/ltm.json</code>. It survives across sessions and is retrieved at the start of each new session via semantic search.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What gets stored in long-term memory?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>LTM is organised into five categories:</p>
+          <pre><code>project     → goals, milestones, PRDs, architecture decisions
+team        → member roles, velocity history, preferences
+decisions   → choices made, rationale, rejected alternatives
+compressed  → session summaries, evicted STM turns
+signals     → defect patterns, PR cycle times, risk entries</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How does vector search / RAG work?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Every item written to LTM is converted to a TF-IDF vector and stored. When a new session starts or an agent needs context, your query is also vectorised and compared against all stored vectors using cosine similarity. The top-k most relevant entries (default: 5) are injected into the active context window.</p>
+          <div class="callout tip">
+            <span class="callout-icon">✦</span>
+            <div class="callout-body">The vector store is pure Python — no external vector database required. It runs entirely in memory.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">What happens when the context window gets too full?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>When the number of conversation turns exceeds <code>stm_max_turns</code> (default: 20), the oldest half of turns are summarised and written to the <code>compressed</code> LTM category. The raw turns are then evicted from the active window. This keeps the context lean without losing important history.</p>
+          <pre><code># Override in .env
+STM_MAX_TURNS=30</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I inspect or reset long-term memory?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Type <code>memory</code> at the prompt to print a summary of all LTM categories.</p>
+          <p>To reset LTM completely, delete the file:</p>
+          <pre><code># Windows
+del data\ltm.json
+
+# Mac / Linux
+rm data/ltm.json</code></pre>
+          <p>The file will be recreated fresh on the next run.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ── Integrations ── -->
+    <section class="category" id="integrations">
+      <div class="cat-header">
+        <div class="cat-icon teal">⇄</div>
+        <h2>Integrations</h2>
+        <span class="cat-count">4 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">Do I need Jira, GitHub, or Slack to use the copilot?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>No. All integrations are optional. When credentials are absent, every tool call falls back to realistic demo data automatically. You can explore the full copilot experience with only an Anthropic API key.</p>
+          <div class="callout tip">
+            <span class="callout-icon">✦</span>
+            <div class="callout-body">Demo mode uses pre-built ticket lists, PR diffs, and team data that match realistic project scenarios.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I connect Jira?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Add these three values to your <code>.env</code> file:</p>
+          <pre><code>JIRA_URL=https://your-org.atlassian.net
+JIRA_USER=you@yourorg.com
+JIRA_TOKEN=your_jira_api_token</code></pre>
+          <p>Get your Jira API token at <code>id.atlassian.com/manage-profile/security/api-tokens</code>.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I connect GitHub?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>GITHUB_TOKEN=ghp_your_personal_access_token
+GITHUB_REPO=your-org/your-repo</code></pre>
+          <p>Create a personal access token at <code>github.com/settings/tokens</code>. The token needs <code>repo</code> scope to read PR diffs.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">How do I connect Slack?</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <pre><code>SLACK_TOKEN=xoxb-your-bot-token
+SLACK_CHANNEL=#dev-updates</code></pre>
+          <p>Create a Slack bot at <code>api.slack.com/apps</code>, add the <code>chat:write</code> OAuth scope, install it to your workspace, and copy the Bot User OAuth Token.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ── Errors ── -->
+    <section class="category" id="errors">
+      <div class="cat-header">
+        <div class="cat-icon red">⚠</div>
+        <h2>Errors &amp; Fixes</h2>
+        <span class="cat-count">7 questions</span>
+      </div>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">ModuleNotFoundError: No module named 'copilot'</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>You are running from the wrong directory. You must be inside the project root where <code>main.py</code> lives:</p>
+          <pre><code>cd AI-CapstoneProjects
+python main.py</code></pre>
+          <p>Or install the package so it works from anywhere:</p>
+          <pre><code>pip install -e .</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">ModuleNotFoundError: No module named 'copilot.orchestrator'</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p><code>main.py</code> is probably inside the <code>copilot\</code> folder instead of next to it. Move it out:</p>
+          <pre><code>move copilot\main.py main.py</code></pre>
+          <p>Then verify the structure matches the layout shown in the Setup section.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">NameError: name 'Config' is not defined</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>A stale <code>__pycache__</code> or partial import is preventing <code>copilot/__init__.py</code> from loading. Clear the cache and retry:</p>
+          <pre><code># Windows
+rmdir /s /q copilot\__pycache__
+python main.py
+
+# Mac / Linux
+rm -rf copilot/__pycache__
+python main.py</code></pre>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">anthropic.AuthenticationError: invalid x-api-key (401)</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Your API key is missing, wrong, or malformed. Open <code>.env</code> and check:</p>
+          <pre><code>ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxx   ← no quotes, no spaces</code></pre>
+          <div class="callout err">
+            <span class="callout-icon">✕</span>
+            <div class="callout-body">Common mistakes: key wrapped in quotes, leading/trailing space, key copied incompletely, or <code>.env</code> file not saved.</div>
+          </div>
+          <p>Get a fresh key at <code>console.anthropic.com → API Keys</code>.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">cannot import name 'create_tool_calling_agent' from 'langchain.agents'</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>This project does not use LangChain at all. If you see this error you are running a different file — not the one from this project.</p>
+          <ol class="steps">
+            <li>Confirm you are in the right folder: <code>cd AI-CapstoneProjects</code></li>
+            <li>Check the first lines of your file: <code>type main.py</code> — it should say <em>AI PM Copilot — Main entry point</em></li>
+            <li>If not, re-download the files from the source and replace them</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">SyntaxError: from __future__ imports must occur at the beginning of the file</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>A previous patch injected path-bootstrap code before a <code>from __future__ import annotations</code> line. Clear Python's cache to force a clean re-read:</p>
+          <pre><code>rmdir /s /q copilot\__pycache__   (Windows)
+rm -rf copilot/__pycache__        (Mac/Linux)</code></pre>
+          <p>Then re-download the latest <code>copilot/memory.py</code> and <code>copilot/agents.py</code> from the shared files above, which have the correct ordering.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary class="faq-q">
+          <span class="q-marker">Q</span>
+          <span class="q-text">python -m pytest tests/ fails with import errors</span>
+          <span class="faq-chevron">▾</span>
+        </summary>
+        <div class="faq-a">
+          <p>Make sure you run pytest from inside the project root and that <code>conftest.py</code> is present there:</p>
+          <pre><code>cd AI-CapstoneProjects
+dir conftest.py      ← must exist
+python -m pytest tests/ -v</code></pre>
+          <p>If <code>conftest.py</code> is missing, create it with:</p>
+          <pre><code>import os, sys
+ROOT = os.path.dirname(os.path.abspath(__file__))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)</code></pre>
+        </div>
+      </details>
+
+    </section>
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <span>AI PM Copilot · v1.0 · June 2026</span>
+  <div class="footer-right">
+    <a href="#setup">Setup</a>
+    <a href="#errors">Troubleshooting</a>
+    <a href="#agents">Agents</a>
+  </div>
+</footer>
+
+<script>
+// ── Accordion open/close tracking ──────────────────────────────────────────
+document.querySelectorAll('details.faq').forEach(d => {
+  d.addEventListener('toggle', () => {
+    d.classList.toggle('open', d.open);
+  });
+});
+
+// ── Active nav on scroll ───────────────────────────────────────────────────
+const sections = document.querySelectorAll('section.category');
+const navLinks  = document.querySelectorAll('nav a[href^="#"]');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+
+sections.forEach(s => observer.observe(s));
+
+// ── Search ─────────────────────────────────────────────────────────────────
+const searchInput = document.getElementById('search');
+const countEl     = document.getElementById('search-count');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  const faqs = document.querySelectorAll('.faq');
+  let visible = 0;
+
+  faqs.forEach(faq => {
+    const text = faq.textContent.toLowerCase();
+    const match = !q || text.includes(q);
+    faq.classList.toggle('hidden', !match);
+    if (match) visible++;
+    if (q && match) faq.open = true;
+    if (!q) faq.open = false;
+  });
+
+  countEl.textContent = q ? `${visible} result${visible !== 1 ? 's' : ''}` : '';
+
+  // Show/hide category sections
+  document.querySelectorAll('.category').forEach(cat => {
+    const anyVisible = [...cat.querySelectorAll('.faq')].some(f => !f.classList.contains('hidden'));
+    cat.style.display = anyVisible ? '' : 'none';
+  });
+});
+
+// ── Expand / collapse all ──────────────────────────────────────────────────
+function expandAll()  { document.querySelectorAll('details.faq').forEach(d => d.open = true);  }
+function collapseAll(){ document.querySelectorAll('details.faq').forEach(d => d.open = false); }
+</script>
+</body>
+</html>

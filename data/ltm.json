@@ -1,0 +1,221 @@
+{
+  "project": [
+    {
+      "category": "project",
+      "content": "Project name: AI PM Copilot. Goal: ship agentic project management tool by Q3 2026.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.268086+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Sprint 12 runs from July 7 to July 18 2026. Sprint goal: complete OAuth2 authentication module.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.268801+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Next sprint planning meeting: Monday July 7 2026 at 10:00 AM IST. Google Meet: meet.google.com/abc-xyz",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.269340+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Next sprint review: Friday July 18 2026 at 4:00 PM IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.269878+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Next sprint retrospective: Friday July 18 2026 at 5:00 PM IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.270538+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Daily standup: every weekday at 9:30 AM IST on Slack huddle #dev-standup.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.271205+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Definition of done: code reviewed, tests written, deployed to staging, PM sign-off.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.271861+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Sprint 11 velocity: 34 story points. Sprint 10 velocity: 28 story points.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.272595+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Current sprint capacity: 36 story points (Alice 12pts, Bob 10pts, Charlie 8pts, Diana 6pts).",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.273210+00:00"
+    }
+  ],
+  "team": [
+    {
+      "category": "team",
+      "content": "Alice Chen \u2014 Backend Engineer. Owns: auth module, API layer. Timezone: IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.273771+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Bob Kumar \u2014 Frontend Engineer. Owns: dashboard, UI components. Timezone: IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.274317+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Charlie Singh \u2014 QA Engineer. Owns: test coverage, regression suite. Timezone: IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.274838+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Diana Patel \u2014 Product Manager. Owns: backlog, stakeholder comms. Timezone: IST.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.275352+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Alice is on leave July 14-15. Reduces sprint capacity by 4 story points.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.275873+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Bob prefers async code reviews \u2014 allow 24hrs before expecting feedback.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.276415+00:00"
+    },
+    {
+      "category": "team",
+      "content": "Charlie flags: test environment is flaky on Windows, use Docker for reliable runs.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.276952+00:00"
+    }
+  ],
+  "decisions": [
+    {
+      "category": "decisions",
+      "content": "Decision: Use PostgreSQL over MongoDB. Rationale: structured queries for sprint metrics. Date: June 2026.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.277510+00:00"
+    },
+    {
+      "category": "decisions",
+      "content": "Decision: OAuth2 with Google provider over custom auth. Rationale: faster delivery, better security. Date: June 2026.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.278075+00:00"
+    },
+    {
+      "category": "decisions",
+      "content": "Decision: TF-IDF vector store over Pinecone. Rationale: no external dependency, sufficient for MVP. Date: June 2026.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.278656+00:00"
+    },
+    {
+      "category": "decisions",
+      "content": "Decision: Anthropic Claude Sonnet as reasoning model. Rationale: best cost/quality ratio. Date: June 2026.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.279227+00:00"
+    },
+    {
+      "category": "decisions",
+      "content": "Rejected: LangChain \u2014 too heavy, adds unnecessary abstractions for this use case.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.279811+00:00"
+    }
+  ],
+  "compressed": [],
+  "signals": [
+    {
+      "category": "signals",
+      "content": "Sprint plan (Check when the next sprint starts or ends): I notice that the sprint planning context is missing some critical information needed to create an effective sprint plan. Specifically, I need:\n\n**Missing Information Required:**\n\n1. **Sprint Duration**: How many weeks is the sprint? (typically 1-4 weeks)\n2. **Team Velocity**: What is the team's his",
+      "source": "sprint_planner",
+      "timestamp": "2026-06-05T13:58:38.745923+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Sprint plan (Check when the next sprint starts or ends): # Sprint Planning Information Request\n\nI can see you have 7 tickets totaling 26 story points (not 19 as mentioned), but I'm missing the critical information needed to create an effective sprint plan.\n\n## Current Backlog Analysis\n**Total Available Work:** 26 story points across 7 tickets\n- **In Progr",
+      "source": "sprint_planner",
+      "timestamp": "2026-06-05T15:10:50.642368+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Sprint plan (Check sprint timing and duration details): # SPRINT PLAN RECOMMENDATION\n\n## Sprint Overview\n- **Duration**: 2 weeks\n- **Team Velocity**: 18 story points\n- **Available Capacity**: 18 story points\n- **Total Backlog**: 26 story points\n- **Capacity Status**: \u2705 WITHIN CAPACITY (selected items = 17 points)\n\n## Sprint Goals\n1. Complete critical aut",
+      "source": "sprint_planner",
+      "timestamp": "2026-06-05T15:14:37.861466+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-101 OAuth2 login \u2014 5pts \u2014 Alice \u2014 High \u2014 In Progress.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.280419+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-102 Dashboard velocity widget \u2014 3pts \u2014 Bob \u2014 Medium \u2014 To Do.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.281035+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-103 Fix pagination bug \u2014 2pts \u2014 Alice \u2014 High \u2014 In Progress.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.281992+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-104 Unit tests for risk analyser \u2014 3pts \u2014 Charlie \u2014 Medium \u2014 To Do.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.284738+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-105 Integrate Slack notifications \u2014 4pts \u2014 Unassigned \u2014 Low \u2014 To Do.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.285751+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-106 CI/CD pipeline for staging \u2014 5pts \u2014 Bob \u2014 High \u2014 Blocked: waiting on DevOps access.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.286739+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PROJ-107 Vector search optimisation \u2014 4pts \u2014 Charlie \u2014 Medium \u2014 To Do.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.287535+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Risk: PROJ-106 blocked on DevOps staging access. ETA unknown. Impact: HIGH.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.288319+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Risk: Alice leave July 14-15 reduces sprint capacity by 4pts. Affects PROJ-101 timeline.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.289075+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "CI pipeline: GitHub Actions passing on main. Flaky integration test failure rate: 8%.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.289882+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "PR cycle time average last sprint: 18 hours. Target: under 12 hours.",
+      "source": "seed.py",
+      "timestamp": "2026-06-08T13:49:15.290607+00:00"
+    }
+  ]
+}

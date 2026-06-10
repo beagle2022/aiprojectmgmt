@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+ai_pm_copilot.egg-info/PKG-INFO
+ai_pm_copilot.egg-info/SOURCES.txt
+ai_pm_copilot.egg-info/dependency_links.txt
+ai_pm_copilot.egg-info/entry_points.txt
+ai_pm_copilot.egg-info/requires.txt
+ai_pm_copilot.egg-info/top_level.txt

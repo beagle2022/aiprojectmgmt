@@ -1,0 +1,2 @@
+[console_scripts]
+pm-copilot = copilot.__main__:run
