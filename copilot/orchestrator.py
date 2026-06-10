@@ -295,13 +295,5 @@ class Orchestrator:
             lines.append(f"[{item.get('category', '?')}] {item.get('content', '')[:120]}")
         return "\n".join(lines)
 
-#################RATE LIMITATION########################
-self.security = SecurityPipeline(
-    rate_limiter=RateLimiter(
-        max_calls=config.rate_limit_max_calls,
-        window_seconds=config.rate_limit_window,
-    ),
-    block_on_injection=config.block_on_injection,
-)
 
 
