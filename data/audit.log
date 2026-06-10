@@ -1,0 +1,6 @@
+2026-06-10 12:51:17,542 | WARNING | PII_DETECTED | types=['email', 'phone_us', 'phone_in'] | count=3
+{"event": "REQUEST", "source": "user", "content_hash": "e3b38bb3a49e6327", "ts": "2026-06-10T07:21:17.543648+00:00"}
+2026-06-10 12:51:19,922 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-10 12:51:26,613 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-10 12:52:13,236 | WARNING | INJECTION_ATTEMPT | pattern=ignore\s+(all\s+)?(previous|prior|above) | input_hash=16ed1b56c72bdedc
+{"event": "SECURITY_INJECTION_BLOCKED", "detail": "['Potential prompt injection detected: ignore\\\\s+(all\\\\s+)?(previous|prior|above)']", "ts": "2026-06-10T07:22:13.237354+00:00"}
