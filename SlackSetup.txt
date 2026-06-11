@@ -1,0 +1,23 @@
+
+App ID
+A0B9HJG6XP0
+
+Client ID
+11309944118583.11323628235782
+
+Client Secret
+e1b3202ad4816575abf6b0e0eee07a6e
+
+Signing secret
+7f7259df176ffda679483a6632fb858a
+
+
+Verification Token
+ybG5eoKJW7f7rGYSbRHTauoG
+
+===================
+
+Bot User OAUTH Token
+xoxb-11309944118583-11322444234053-Zy5Unqsyh8PLr1gVe7TPt0lD
+
+
