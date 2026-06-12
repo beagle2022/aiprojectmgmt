@@ -32,3 +32,8 @@ RATE_LIMIT_WINDOW_SECONDS=60 # rolling window size
 # Guardrail behaviour
 BLOCK_ON_INJECTION=true      # false = warn only, don't block
 MAX_INPUT_LENGTH=8000        # truncate inputs longer than this
+
+#######Slack Configuration Remove comments
+
+##########SLACK_TOKEN=xoxb-11309944118583-11322444234053-Zy5Unqsyh8PLr1gVe7TPt0lD
+##########SLACK_CHANNEL=AI PM Copilot

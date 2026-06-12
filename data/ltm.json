@@ -53,6 +53,18 @@
       "content": "Current sprint capacity: 36 story points (Alice 12pts, Bob 10pts, Charlie 8pts, Diana 6pts).",
       "source": "seed.py",
       "timestamp": "2026-06-08T13:49:15.273210+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Requirements (Define security requirement for application logs protection as HITL guardrail violation): # Application Log Protection & HITL Guardrail Implementation - Technical Specifications\n\n## Overview\nImplement a comprehensive application log protection system with human-in-the-loop (HITL) guardrails to ensure secure access, real-time monitoring, audit compliance, and emergency override capabiliti",
+      "source": "requirements_agent",
+      "timestamp": "2026-06-10T09:27:56.066233+00:00"
+    },
+    {
+      "category": "project",
+      "content": "Requirements (User wants to integrate or connect to Slack): # User Story: Slack Integration\n\n## User Story\n**As a** team member  \n**I want** to connect the AI PM Copilot to Slack  \n**So that** I can receive project updates, alerts, and interact with the copilot directly within my daily workflow\n\n## Acceptance Criteria\n- [ ] Bot can be added to Slack workspac",
+      "source": "requirements_agent",
+      "timestamp": "2026-06-10T13:12:45.443236+00:00"
     }
   ],
   "team": [
@@ -216,6 +228,18 @@
       "content": "PR cycle time average last sprint: 18 hours. Target: under 12 hours.",
       "source": "seed.py",
       "timestamp": "2026-06-08T13:49:15.290607+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Sprint plan (User asking about when Slack will be configured/integrated): # Sprint Plan\n\n## Sprint Capacity Analysis\n- **Base Capacity**: 36 story points\n- **Alice Leave Impact**: -4 story points (July 14-15)\n- **Adjusted Capacity**: 32 story points\n- **Current Committed Work**: 7 story points (in-progress items)\n- **Available Capacity**: 25 story points\n\n## Prioritized S",
+      "source": "sprint_planner",
+      "timestamp": "2026-06-10T09:22:21.319458+00:00"
+    },
+    {
+      "category": "signals",
+      "content": "Risk analysis (Define security requirement for application logs protection as HITL guardrail violation): # Risk Register - Application Log Protection & HITL Guardrail Implementation\n\n## \ud83d\udea8 CRITICAL RISKS (Potential Deadline Impact)\n\n| Risk ID | Description | Likelihood | Impact | Risk Score | Mitigation |\n|---------|-------------|------------|--------|------------|------------|\n| **R001** | PROJ-106 blo",
+      "source": "risk_analyst",
+      "timestamp": "2026-06-10T09:27:56.063668+00:00"
     }
   ]
 }

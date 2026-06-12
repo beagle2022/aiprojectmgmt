@@ -294,6 +294,3 @@ class Orchestrator:
         for item in retrieved:
             lines.append(f"[{item.get('category', '?')}] {item.get('content', '')[:120]}")
         return "\n".join(lines)
-
-
-
