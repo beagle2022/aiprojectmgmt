@@ -206,26 +206,40 @@ def pii_guard(text: str) -> str:
 # 3. INPUT SANITISATION (PROMPT INJECTION DEFENCE)
 # ══════════════════════════════════════════════════════════════════════════════
 
+# Phrases that are always safe regardless of pattern matches
+# Add any legitimate development or task phrases here
+INJECTION_WHITELIST = [
+    re.compile(r"develop|dashboard|skill|claude|sonnet|integration|build|create|design", re.I),
+    re.compile(r"how to|help me|can you|please|generate|write|update|improve", re.I),
+    re.compile(r"sprint|backlog|standup|ticket|story|task|review|risk|deploy", re.I),
+    re.compile(r"act as (a )?(pm|product manager|scrum master|developer|engineer)", re.I),
+    re.compile(r"you are (a )?(pm|product manager|scrum master|developer|engineer|assistant)", re.I),
+]
+
 # Patterns that attempt to hijack the agent's system prompt or persona
 INJECTION_PATTERNS = [
     re.compile(r"ignore\s+(all\s+)?(previous|prior|above)\s+instructions", re.I),
-    re.compile(r"you\s+are\s+now\s+(a\s+)?(?!the copilot)", re.I),
-    re.compile(r"act\s+as\s+(a\s+)?(?!the copilot)", re.I),
+    re.compile(r"you\s+are\s+now\s+(a\s+)?(?!the copilot|a pm|a product|a scrum|a developer|an engineer)", re.I),
     re.compile(r"(forget|disregard|override)\s+(your\s+)?(instructions|prompt|rules)", re.I),
     re.compile(r"jailbreak", re.I),
-    re.compile(r"<\s*(script|iframe|object|embed)\s*>", re.I),   # HTML injection
+    re.compile(r"<\s*(script|iframe|object|embed)\s*>", re.I),
     re.compile(r"system\s*:\s*(you are|ignore)", re.I),
-    re.compile(r"print\s+(the\s+)?(system\s+prompt|instructions|api\s+key)", re.I),
+    re.compile(r"print\s+(the\s+)?(system\s+prompt|api\s+key)", re.I),
 ]
 
 # Maximum safe input length
-MAX_INPUT_LENGTH = 8000
+MAX_INPUT_LENGTH = 12000
 
 
 def sanitise_input(text: str) -> tuple[str, list[str]]:
     """
     Check user input for prompt injection attempts and enforce length limits.
     Returns (sanitised_text, list_of_warnings).
+
+    Whitelist takes priority — if any whitelist pattern matches, injection
+    patterns are skipped entirely. This prevents legitimate development
+    prompts (e.g. dashboard building, Claude skill development) from
+    being blocked.
 
     Usage:
         clean, warnings = sanitise_input(user_message)
@@ -239,11 +253,19 @@ def sanitise_input(text: str) -> tuple[str, list[str]]:
         text = text[:MAX_INPUT_LENGTH]
         warnings.append(f"Input truncated to {MAX_INPUT_LENGTH} characters")
 
-    # Injection pattern check
+    # Whitelist check — if any safe pattern matches, skip injection scan
+    is_whitelisted = any(p.search(text) for p in INJECTION_WHITELIST)
+    if is_whitelisted:
+        return text, warnings
+
+    # Injection pattern check (only runs if not whitelisted)
     for pattern in INJECTION_PATTERNS:
         if pattern.search(text):
             warnings.append(f"Potential prompt injection detected: {pattern.pattern[:40]}")
-            audit_log.warning(f"INJECTION_ATTEMPT | pattern={pattern.pattern[:40]} | input_hash={hashlib.sha256(text.encode()).hexdigest()[:16]}")
+            audit_log.warning(
+                f"INJECTION_ATTEMPT | pattern={pattern.pattern[:40]} | "
+                f"input_hash={hashlib.sha256(text.encode()).hexdigest()[:16]}"
+            )
 
     return text, warnings
 

@@ -174,8 +174,10 @@ class TestToolRegistry(unittest.TestCase):
         self.assertGreater(len(tickets), 0)
 
     def test_post_slack_without_token(self):
-        """Without a token, post_slack_message should return False gracefully."""
-        result = self.tools.post_slack_message("test message")
+        """Without a token, post_slack_message should return False gracefully.
+        HITL gate is mocked to auto-approve so the test is non-interactive."""
+        with patch("copilot.guardrails.require_human_approval", return_value=True):
+            result = self.tools.post_slack_message("test message")
         self.assertFalse(result)
 
 

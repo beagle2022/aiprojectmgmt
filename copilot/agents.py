@@ -38,7 +38,7 @@ class BaseAgent(ABC):
     def __init__(self, config: Config):
         self.config = config
         self.client = anthropic.Anthropic(api_key=config.anthropic_api_key)
-        self.tools = ToolRegistry(config)
+        self.tools = ToolRegistry(config)   # shared tool registry
 
     # ── Public ────────────────────────────────────────────────────────────
 
@@ -176,6 +176,15 @@ class StandupAgent(BaseAgent):
             "Keep it under 200 words. "
             "Respond in plain text."
         )
+
+    def run(self, task: str, context: dict) -> str:
+        # Fetch recent Slack messages to include in context
+        if not context.get("slack_messages"):
+            context["slack_messages"] = self.tools.fetch_slack_messages(limit=10)
+        digest = super().run(task, context)
+        # Auto-post digest to Slack after generating it
+        self.tools.post_standup_digest(digest)
+        return digest
 
 # ── Registry ──────────────────────────────────────────────────────────────────
 

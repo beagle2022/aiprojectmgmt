@@ -80,3 +80,401 @@
 2026-06-10 18:42:34,794 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 2026-06-10 18:42:43,533 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 2026-06-10 18:42:45,441 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "f54b23028c8277ca", "ts": "2026-06-16T05:51:00.309637+00:00"}
+2026-06-16 11:21:00,940 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "b88a04dcf2dbf411", "ts": "2026-06-16T05:53:51.364052+00:00"}
+2026-06-16 11:23:51,868 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "e0d75135497440b4", "ts": "2026-06-16T05:56:04.587328+00:00"}
+2026-06-16 11:26:05,203 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "e91338eecba1a99c", "ts": "2026-06-16T05:57:26.970650+00:00"}
+2026-06-16 11:27:27,457 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "210ff7775d02ca18", "ts": "2026-06-16T06:09:00.910761+00:00"}
+2026-06-16 11:39:01,424 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "3309440e2b83a97f", "ts": "2026-06-16T06:11:12.917439+00:00"}
+2026-06-16 11:41:13,482 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+{"event": "REQUEST", "source": "user", "content_hash": "7bfa0b71883f8d1e", "ts": "2026-06-16T06:23:01.995112+00:00"}
+2026-06-16 11:53:02,736 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+{"event": "REQUEST", "source": "user", "content_hash": "7bfa0b71883f8d1e", "ts": "2026-06-16T06:27:56.113766+00:00"}
+2026-06-16 11:57:57,833 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 11:58:03,137 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "dc19f0b3176d5f09", "ts": "2026-06-16T06:30:29.991440+00:00"}
+2026-06-16 12:00:31,523 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:00:37,451 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "e0d75135497440b4", "ts": "2026-06-16T06:32:04.856196+00:00"}
+2026-06-16 12:02:06,479 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:02:12,229 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "5d020f5f81b66f4c", "ts": "2026-06-16T06:39:38.996447+00:00"}
+2026-06-16 12:09:41,630 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:10:00,488 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:10:21,775 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:10:35,099 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:10:39,655 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:10:54,725 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:11:05,569 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:11:20,908 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:11:24,305 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "e0d75135497440b4", "ts": "2026-06-16T06:45:38.138871+00:00"}
+2026-06-16 12:15:39,601 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:15:46,665 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "9d5df9b0bab99468", "ts": "2026-06-16T06:46:58.363441+00:00"}
+2026-06-16 12:17:00,664 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:17:06,581 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "b8da77afef08cc65", "ts": "2026-06-16T06:50:23.749287+00:00"}
+2026-06-16 12:20:26,014 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:20:40,888 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:20:54,459 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:21:04,646 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:21:08,911 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c8e00e30984e765b", "ts": "2026-06-16T06:51:44.678827+00:00"}
+2026-06-16 12:21:46,651 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:22:01,744 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:22:04,780 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "63d2f971a5892379", "ts": "2026-06-16T07:12:19.047904+00:00"}
+2026-06-16 12:42:20,614 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:42:23,766 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "3d9e43485a12b4d0", "ts": "2026-06-16T07:12:44.229288+00:00"}
+2026-06-16 12:42:47,102 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:42:51,125 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "804c424c4fd76ed8", "ts": "2026-06-16T07:15:04.870581+00:00"}
+2026-06-16 12:45:07,167 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:09,224 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "85028d43c90f0718", "ts": "2026-06-16T07:15:09.227709+00:00"}
+2026-06-16 12:45:10,680 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:13,417 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "1c6f45507f471783", "ts": "2026-06-16T07:15:13.422334+00:00"}
+2026-06-16 12:45:14,908 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:18,320 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "1fbc00bc8ff6b9c2", "ts": "2026-06-16T07:15:18.324092+00:00"}
+2026-06-16 12:45:19,856 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:24,454 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "f7cfed1305c8efac", "ts": "2026-06-16T07:15:24.458335+00:00"}
+2026-06-16 12:45:25,911 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:30,172 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "8a331fdde7032f33", "ts": "2026-06-16T07:15:30.179717+00:00"}
+2026-06-16 12:45:32,043 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:39,233 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "07d10aafc2447062", "ts": "2026-06-16T07:15:39.241911+00:00"}
+2026-06-16 12:45:41,732 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:44,495 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "5fbffc56b76dcf97", "ts": "2026-06-16T07:15:44.499509+00:00"}
+2026-06-16 12:45:46,188 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:50,121 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "d172f92ee5d4001e", "ts": "2026-06-16T07:15:50.128541+00:00"}
+2026-06-16 12:45:51,576 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:45:56,625 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "4e9424bf282245ea", "ts": "2026-06-16T07:15:56.630577+00:00"}
+2026-06-16 12:45:58,289 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:05,444 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "21aacc2b65371cc3", "ts": "2026-06-16T07:16:05.451373+00:00"}
+2026-06-16 12:46:07,994 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:16,208 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "ed76dc69ab60b28f", "ts": "2026-06-16T07:16:16.214213+00:00"}
+2026-06-16 12:46:17,797 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:23,811 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "88430c414a73c91d", "ts": "2026-06-16T07:16:23.820355+00:00"}
+2026-06-16 12:46:25,886 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:29,505 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:32,860 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "f49b3b1d99036ebe", "ts": "2026-06-16T07:16:32.864669+00:00"}
+2026-06-16 12:46:34,257 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:40,703 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "feed7ac46a00192a", "ts": "2026-06-16T07:16:40.707957+00:00"}
+2026-06-16 12:46:42,144 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:49,293 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "04dc5b2136328a0d", "ts": "2026-06-16T07:16:49.297756+00:00"}
+2026-06-16 12:46:50,763 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:46:55,641 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "f7ffb54ea54f2916", "ts": "2026-06-16T07:16:55.648109+00:00"}
+2026-06-16 12:46:57,016 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:02,791 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "89b15dd343075c72", "ts": "2026-06-16T07:17:02.819316+00:00"}
+2026-06-16 12:47:04,270 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:07,161 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "73602fb965656fbe", "ts": "2026-06-16T07:17:07.166302+00:00"}
+2026-06-16 12:47:09,972 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:13,432 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "50026ab0e0989e47", "ts": "2026-06-16T07:17:13.439514+00:00"}
+2026-06-16 12:47:15,101 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:27,929 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:37,507 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:47,853 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:47:52,817 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "42dd53cd662b038d", "ts": "2026-06-16T07:17:52.827921+00:00"}
+2026-06-16 12:47:55,298 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:48:08,295 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:48:11,551 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:48:25,117 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:48:28,336 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "1abf7ff4bca01e58", "ts": "2026-06-16T07:21:00.859146+00:00"}
+2026-06-16 12:51:03,304 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:51:07,188 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "264011a6d49e3619", "ts": "2026-06-16T07:25:57.406958+00:00"}
+2026-06-16 12:55:59,698 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:56:19,227 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:56:34,618 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:56:39,344 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:57:01,444 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:57:14,639 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:57:18,514 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "4f76ce25c2808a37", "ts": "2026-06-16T07:27:18.525380+00:00"}
+2026-06-16 12:57:20,028 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 12:57:25,492 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "ceb51b7b82ab6c1c", "ts": "2026-06-16T07:38:42.611363+00:00"}
+2026-06-16 13:08:44,582 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:08:49,009 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "ed2abcfee6837bf4", "ts": "2026-06-16T07:39:20.729872+00:00"}
+2026-06-16 13:09:23,031 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:09:27,487 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "5d3ef1cf839e6211", "ts": "2026-06-16T07:39:55.803881+00:00"}
+2026-06-16 13:09:59,544 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "5055073f90c16ebc", "ts": "2026-06-16T08:18:44.101781+00:00"}
+2026-06-16 13:48:46,464 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:48:52,497 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:48:55,235 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:49:03,704 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:49:08,043 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "db4cd2da0489ad97", "ts": "2026-06-16T08:21:13.227423+00:00"}
+2026-06-16 13:51:16,168 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:51:24,436 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 13:51:25,811 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "b897bceddb3fa653", "ts": "2026-06-16T08:29:57.934847+00:00"}
+2026-06-16 14:00:01,503 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 14:00:07,437 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "31a0fd0db504ab13", "ts": "2026-06-16T08:30:43.068769+00:00"}
+2026-06-16 14:00:45,941 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 14:01:08,922 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 14:01:12,803 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "af11938d2599cf4a", "ts": "2026-06-16T08:32:37.498459+00:00"}
+2026-06-16 14:02:39,696 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-16 14:02:42,952 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_jira_tickets", "success": false, "error": "Invalid URL '/rest/api/3/search': No scheme supplied. Perhaps you meant https:///rest/api/3/search?", "ts": "2026-06-16T08:52:17.275381+00:00"}
+{"event": "TOOL_CALL", "tool": "post_slack_message", "success": false, "error": "no token", "ts": "2026-06-16T08:52:17.278187+00:00"}
+{"event": "REQUEST", "source": "user", "content_hash": "6787ec79edee1903", "ts": "2026-06-16T08:52:18.267481+00:00"}
+{"event": "REQUEST", "source": "user", "content_hash": "334d016f755cd6dc", "ts": "2026-06-16T08:52:18.274415+00:00"}
+{"event": "REQUEST", "source": "user", "content_hash": "1732c887286c6f07", "ts": "2026-06-17T00:30:47.364487+00:00"}
+2026-06-17 06:00:49,764 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:00:55,059 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:01:09,297 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+2026-06-17 06:01:15,371 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:01:36,644 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:01:50,649 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:01:54,179 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "1732c887286c6f07", "ts": "2026-06-17T00:56:39.045183+00:00"}
+2026-06-17 06:26:42,797 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:26:49,766 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:27:09,901 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:27:18,698 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:27:24,476 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+2026-06-17 06:27:36,283 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:27:40,303 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "4a939ff5ce6d7e8d", "ts": "2026-06-17T00:59:07.142631+00:00"}
+2026-06-17 06:29:09,925 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T00:59:11.307741+00:00"}
+2026-06-17 06:29:19,936 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:29:24,994 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": false, "error": "Slack error: not_in_channel", "ts": "2026-06-17T00:59:25.945796+00:00"}
+2026-06-17 06:29:29,706 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "75baa14a134f3e45", "ts": "2026-06-17T01:01:24.491092+00:00"}
+2026-06-17 06:31:27,439 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T01:01:28.145335+00:00"}
+2026-06-17 06:31:37,346 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 06:31:42,706 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": false, "error": "Slack error: not_in_channel", "ts": "2026-06-17T01:01:43.421599+00:00"}
+2026-06-17 06:31:45,967 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "75baa14a134f3e45", "ts": "2026-06-17T05:51:30.088436+00:00"}
+2026-06-17 11:21:36,699 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T05:51:37.236040+00:00"}
+2026-06-17 11:21:45,657 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:21:51,424 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": false, "error": "Slack error: not_in_channel", "ts": "2026-06-17T05:51:51.944374+00:00"}
+2026-06-17 11:21:53,232 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "92148c679490a821", "ts": "2026-06-17T05:53:22.930003+00:00"}
+2026-06-17 11:23:25,614 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:23:50,307 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T05:53:50.812887+00:00"}
+2026-06-17 11:23:57,862 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:24:05,150 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": false, "error": "Slack error: not_in_channel", "ts": "2026-06-17T05:54:05.638059+00:00"}
+2026-06-17 11:24:14,841 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:24:16,081 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "7c5f0570ad01eb25", "ts": "2026-06-17T06:03:04.385143+00:00"}
+2026-06-17 11:33:06,903 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:33:14,558 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "5293dbb5293a2537", "ts": "2026-06-17T06:13:56.020237+00:00"}
+2026-06-17 11:43:58,822 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T06:13:59.307409+00:00"}
+2026-06-17 11:44:03,986 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:44:10,055 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-17T06:14:10.580496+00:00"}
+2026-06-17 11:44:23,896 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:44:32,830 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 11:44:34,086 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c2f2fbfdfea4bca1", "ts": "2026-06-17T06:43:50.945887+00:00"}
+2026-06-17 12:13:53,323 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T06:43:53.881593+00:00"}
+2026-06-17 12:14:02,411 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 12:14:08,588 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-17T06:44:09.152888+00:00"}
+2026-06-17 12:14:32,237 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 12:14:45,804 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 12:14:47,100 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "3423a4fe58cb6149", "ts": "2026-06-17T07:24:52.647440+00:00"}
+2026-06-17 12:54:55,301 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 12:55:03,306 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 12:55:06,707 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c2f2fbfdfea4bca1", "ts": "2026-06-17T07:30:32.729791+00:00"}
+2026-06-17 13:00:36,720 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": false, "error": "channel_not_found", "ts": "2026-06-17T07:30:37.293761+00:00"}
+2026-06-17 13:00:46,293 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 13:00:56,200 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-17T07:30:56.768453+00:00"}
+2026-06-17 13:01:21,295 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 13:01:39,626 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 13:01:41,044 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "3f42397c9763e47f", "ts": "2026-06-18T01:59:50.273018+00:00"}
+2026-06-18 07:29:52,745 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:29:59,776 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:30:18,932 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:30:29,857 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:30:33,873 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "6c8a9ba46a4da213", "ts": "2026-06-18T02:10:43.469638+00:00"}
+2026-06-18 07:40:45,135 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:40:56,360 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "399d8770c303339e", "ts": "2026-06-18T02:14:34.056652+00:00"}
+2026-06-18 07:44:37,680 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-18T02:14:38.490171+00:00"}
+2026-06-18 07:44:48,080 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:44:57,594 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-18T02:14:58.156907+00:00"}
+2026-06-18 07:45:00,778 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c5e41594c1cdb743", "ts": "2026-06-18T02:17:56.874998+00:00"}
+2026-06-18 07:47:58,699 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 07:48:07,594 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c71501750fbd57e6", "ts": "2026-06-18T03:23:20.078229+00:00"}
+2026-06-18 08:53:23,205 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-18T03:23:23.811763+00:00"}
+2026-06-18 08:53:33,945 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 08:54:17,056 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-18T03:24:18.050922+00:00"}
+2026-06-18 08:54:40,544 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 08:54:59,459 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 08:55:01,305 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "4622acf9f52aacc9", "ts": "2026-06-18T03:47:32.840340+00:00"}
+2026-06-18 09:17:37,351 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 09:17:50,186 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "ca130c705cdfef55", "ts": "2026-06-18T05:00:59.410486+00:00"}
+2026-06-18 05:01:02,240 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 05:01:09,392 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 05:01:30,139 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 05:01:40,672 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-18 05:01:43,420 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "e8ec36114495e220", "ts": "2026-06-23T13:08:41.747755+00:00"}
+2026-06-23 18:38:44,732 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-23T13:08:45.974830+00:00"}
+2026-06-23 18:38:54,578 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:39:11,587 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-23T13:09:12.186898+00:00"}
+2026-06-23 18:39:37,062 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:39:54,088 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:39:57,511 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "1fe78afc2626a6e2", "ts": "2026-06-23T13:17:24.627646+00:00"}
+2026-06-23 18:47:27,791 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:47:42,586 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-23T13:17:43.386144+00:00"}
+2026-06-23 18:47:51,309 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:48:02,889 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-23T13:18:03.492864+00:00"}
+2026-06-23 18:48:12,037 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:48:14,059 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "8a798890fe938171", "ts": "2026-06-23T13:23:53.388427+00:00"}
+2026-06-23 18:53:55,208 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-23 18:54:04,404 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "91093b6857572030", "ts": "2026-06-29T14:22:49.506626+00:00"}
+2026-06-29 19:52:52,534 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-29T14:22:53.558591+00:00"}
+2026-06-29 19:53:03,590 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 19:53:39,965 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-29T14:23:40.581793+00:00"}
+2026-06-29 19:53:42,297 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "e84418e63c74a4d9", "ts": "2026-06-29T14:25:25.449056+00:00"}
+2026-06-29 19:55:28,178 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 19:55:49,069 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-06-29T14:25:50.197760+00:00"}
+2026-06-29 19:55:59,308 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 19:56:31,513 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-06-29T14:26:32.181955+00:00"}
+2026-06-29 19:56:45,082 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 19:56:46,640 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "df9a6a65ee55a5f4", "ts": "2026-06-30T09:29:10.379282+00:00"}
+2026-06-30 14:59:12,508 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-30 14:59:18,856 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "fbdcab0d42ebf08a", "ts": "2026-06-30T09:29:44.390771+00:00"}
+2026-06-30 14:59:45,918 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-30 14:59:47,938 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "d8849ea773dbaa6e", "ts": "2026-06-30T09:30:05.300071+00:00"}
+2026-06-30 15:00:07,347 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-30 15:00:15,384 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "b1cf56eaa490be28", "ts": "2026-07-05T14:29:39.509593+00:00"}
+2026-07-05 19:59:42,790 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+{"event": "REQUEST", "source": "user", "content_hash": "b1cf56eaa490be28", "ts": "2026-07-05T14:38:10.874906+00:00"}
+2026-07-05 20:08:11,734 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+{"event": "REQUEST", "source": "user", "content_hash": "9401ce5648181910", "ts": "2026-07-05T14:43:39.327757+00:00"}
+2026-07-05 20:13:40,214 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+{"event": "REQUEST", "source": "user", "content_hash": "9401ce5648181910", "ts": "2026-07-05T16:07:46.642814+00:00"}
+2026-07-05 21:37:47,509 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+{"event": "REQUEST", "source": "user", "content_hash": "9401ce5648181910", "ts": "2026-07-05T16:19:44.736865+00:00"}
+2026-07-05 21:49:47,555 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-05 21:50:10,403 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-05 21:50:14,329 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "6154116f4b50a828", "ts": "2026-07-08T09:03:16.032776+00:00"}
+2026-07-08 14:33:17,876 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-08 14:33:24,852 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "d6ce8eb9a51af8f5", "ts": "2026-07-16T06:00:16.558252+00:00"}
+2026-07-16 11:30:19,396 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-16 11:30:25,336 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "bf50bef5782ebc59", "ts": "2026-07-16T06:21:29.280086+00:00"}
+2026-07-16 11:51:31,730 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-07-16T06:21:32.727833+00:00"}
+2026-07-16 11:51:37,692 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-16 11:53:13,986 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-07-16T06:23:14.543328+00:00"}
+2026-07-16 11:53:18,626 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "291a7aff5e190899", "ts": "2026-07-16T06:25:35.626508+00:00"}
+2026-07-16 11:55:37,532 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-16 11:55:47,350 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-16 11:55:48,618 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c94731992b71316a", "ts": "2026-07-17T13:57:16.217064+00:00"}
+2026-07-17 19:27:19,602 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-07-17T13:57:20.426384+00:00"}
+2026-07-17 19:27:25,513 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:27:37,015 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-07-17T13:57:37.595400+00:00"}
+2026-07-17 19:27:47,845 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:27:54,551 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:27:58,736 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "c94731992b71316a", "ts": "2026-07-17T14:18:28.404948+00:00"}
+2026-07-17 19:48:30,667 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:48:39,508 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "TOOL_CALL", "tool": "fetch_slack_messages", "success": true, "error": "", "ts": "2026-07-17T14:18:40.192400+00:00"}
+2026-07-17 19:48:44,962 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:48:59,962 | INFO | HITL_APPROVED | action=post_slack_message | details=Calling post_slack_blocks
+{"event": "TOOL_CALL", "tool": "post_slack_blocks", "success": true, "error": "", "ts": "2026-07-17T14:19:00.522940+00:00"}
+2026-07-17 19:49:05,596 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:49:10,287 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "24b010b59077c235", "ts": "2026-07-17T14:20:28.101358+00:00"}
+2026-07-17 19:50:30,989 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:50:46,177 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:50:47,645 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "24b010b59077c235", "ts": "2026-07-17T14:21:24.761064+00:00"}
+2026-07-17 19:51:28,964 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:51:41,094 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:51:42,721 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "18961a9fa414a6b8", "ts": "2026-07-17T14:27:17.194066+00:00"}
+2026-07-17 19:57:19,186 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 19:57:21,872 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "8a798890fe938171", "ts": "2026-07-17T14:29:58.673516+00:00"}
+2026-07-17 20:00:01,964 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-17 20:00:06,536 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+{"event": "REQUEST", "source": "user", "content_hash": "7ab66df2e73d6412", "ts": "2026-07-18T07:56:29.896629+00:00"}
+2026-07-18 13:26:32,115 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-18 13:26:34,357 | INFO | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"

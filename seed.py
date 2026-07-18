@@ -31,7 +31,7 @@ DATA = {
     # Sprint dates, goals, meetings, velocity, definition of done
     "project": [
         "Project name: AI PM Copilot. Goal: ship agentic project management tool by Q3 2026.",
-        "Sprint 13 runs from July 21 to August 1 2026. Sprint goal: ship vector search optimisation and Slack integration.",
+        "Sprint 14 runs from 18 July to 1st August 2026. Sprint goal: ship vector search optimisation and Slack integration.",
         "Sprint planning meeting: Monday July 21 2026 at 10:00 AM IST. Google Meet: meet.google.com/abc-xyz",
         "Sprint review: Friday August 1 2026 at 4:00 PM IST.",
         "Sprint retrospective: Friday August 1 2026 at 5:00 PM IST.",
