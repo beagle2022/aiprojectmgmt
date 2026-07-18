@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprint Dashboard — Generated from LTM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #1B2430;
+  --bg2:       #212C3A;
+  --paper:     #F7F5F0;
+  --ink:       #2A2A28;
+  --ink-muted: #6B6B66;
+  --border:    #D8D4C8;
+  --border-dk: #3A4658;
+  --steel:     #5B7A99;
+  --moss:      #3F6B3F;
+  --ochre:     #B68A2E;
+  --clay:      #A6593C;
+  --cream:     #F7F5F0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 32px 24px 64px;
+}
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.wrap { max-width: 1080px; margin: 0 auto; }
+.masthead {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-bottom: 2px solid var(--border-dk);
+  padding-bottom: 18px; margin-bottom: 6px;
+}
+.masthead h1 {
+  font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 30px;
+  letter-spacing: -0.3px; color: var(--cream);
+}
+.masthead .sub { font-size: 12.5px; color: #9FB0C2; margin-top: 4px; }
+.freshness {
+  font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #7E92A8;
+  text-align: right; line-height: 1.7;
+}
+.freshness .dot { display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--moss); margin-right:6px; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: var(--border-dk); margin: 24px 0; border: 1px solid var(--border-dk); }
+.metric { background: var(--bg); padding: 16px 18px; }
+.metric-label { font-size: 11px; color: #8294A8; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+.metric-value { font-family: 'Source Serif 4', serif; font-size: 28px; font-weight: 600; color: var(--cream); }
+.metric-value.moss { color: #8FBF8F; }
+.metric-value.clay { color: #D88F77; }
+.metric-value.ochre { color: #D9B05C; }
+.progress-block { background: var(--bg2); border: 1px solid var(--border-dk); padding: 14px 18px; margin-bottom: 28px; }
+.progress-label { display: flex; justify-content: space-between; font-size: 12px; color: #9FB0C2; margin-bottom: 8px; }
+.progress-track { height: 6px; background: #2A3648; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--moss); }
+.card { background: var(--paper); color: var(--ink); border-radius: 2px; padding: 22px 24px; margin-bottom: 20px; }
+.card-title {
+  font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 16px;
+  color: var(--ink); margin-bottom: 14px; display: flex; align-items: baseline; gap: 8px;
+}
+.card-title .count { font-family:'IBM Plex Mono',monospace; font-size: 11px; color: var(--ink-muted); font-weight: 400; margin-left: 2px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th {
+  text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--ink-muted); font-weight: 600; padding: 0 8px 8px; border-bottom: 1px solid var(--border);
+}
+tbody td { padding: 9px 8px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+tbody tr:last-child td { border-bottom: none; }
+td.num { text-align: right; }
+.status-pill, .pri-pill {
+  display: inline-block; font-size: 10.5px; font-weight: 600; padding: 2px 8px;
+  border-radius: 2px; letter-spacing: .02em;
+}
+.st-done    { background: #E3EEDD; color: var(--moss); }
+.st-prog    { background: #E2EBF2; color: var(--steel); }
+.st-todo    { background: #EDEAE2; color: var(--ink-muted); }
+.st-blocked { background: #F4E2DB; color: var(--clay); }
+.st-review  { background: #F4EAD3; color: var(--ochre); }
+.pr-high { background: #F4E2DB; color: var(--clay); }
+.pr-med  { background: #F4EAD3; color: var(--ochre); }
+.pr-low  { background: #E3EEDD; color: var(--moss); }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.risk-row { display: flex; align-items: baseline; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.risk-row:last-child { border-bottom: none; }
+.risk-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.risk-dot.ri-high { background: var(--clay); }
+.risk-dot.ri-med  { background: var(--ochre); }
+.risk-dot.ri-low  { background: var(--moss); }
+.risk-text { flex: 1; }
+.risk-impact {
+  font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 600;
+  padding: 2px 7px; border-radius: 2px; letter-spacing: .03em;
+}
+.risk-impact.ri-high { background: #F4E2DB; color: var(--clay); }
+.risk-impact.ri-med  { background: #F4EAD3; color: var(--ochre); }
+.risk-impact.ri-low  { background: #E3EEDD; color: var(--moss); }
+.decision-row { display: grid; grid-template-columns: 78px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.decision-row:last-child { border-bottom: none; }
+.decision-date { font-size: 11px; color: var(--ink-muted); padding-top: 2px; }
+.decision-text { font-size: 13px; color: var(--ink); }
+.decision-rationale { font-size: 12px; color: var(--ink-muted); margin-top: 3px; font-style: italic; }
+.team-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.team-row:last-child { border-bottom: none; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; border: 1px solid; flex-shrink: 0; }
+.team-name { font-size: 13px; color: var(--ink); font-weight: 500; }
+.team-role { font-size: 11.5px; color: var(--ink-muted); }
+.fact-row { font-size: 13px; color: var(--ink); padding: 7px 0; border-bottom: 1px solid var(--border); }
+.fact-row:last-child { border-bottom: none; }
+.fact-bullet { color: var(--steel); margin-right: 8px; font-weight: 600; }
+.empty-row { font-size: 12.5px; color: var(--ink-muted); font-style: italic; padding: 12px 0; }
+footer { text-align: center; font-size: 11px; color: #5E7088; margin-top: 36px; }
+@media (max-width: 720px) {
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .cols { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div>
+      <h1>Sprint Dashboard</h1>
+      <div class="sub">Rendered from AI PM Copilot long-term memory</div>
+    </div>
+    <div class="freshness">
+      <div><span class="dot"></span>Source: /home/claude/dashboard_gen/data/ltm.json</div>
+      <div>Generated: 2026-06-18 07:49 UTC</div>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-label">Total tickets</div><div class="metric-value">6</div></div>
+    <div class="metric"><div class="metric-label">Completed</div><div class="metric-value moss">1</div></div>
+    <div class="metric"><div class="metric-label">Blocked</div><div class="metric-value clay">1</div></div>
+    <div class="metric"><div class="metric-label">Story points</div><div class="metric-value ochre">2 / 22</div></div>
+  </div>
+  <div class="progress-block">
+    <div class="progress-label"><span>Points delivered</span><span>9%</span></div>
+    <div class="progress-track"><div class="progress-fill" style="width:9%"></div></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Backlog tickets <span class="count">6 from signals memory</span></div>
+    <table>
+      <thead><tr><th>ID</th><th>Summary</th><th>Owner</th><th>Status</th><th>Priority</th><th style="text-align:right">Pts</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">PROJ-101</td><td>OAuth2 login</td><td>Alice</td><td><span class="status-pill st-prog">In Progress</span></td><td><span class="pri-pill pr-high">High</span></td><td class="mono num">5</td></tr>
+<tr><td class="mono">PROJ-102</td><td>Dashboard velocity widget</td><td>Bob</td><td><span class="status-pill st-todo">To Do</span></td><td><span class="pri-pill pr-med">Medium</span></td><td class="mono num">3</td></tr>
+<tr><td class="mono">PROJ-103</td><td>Fix pagination bug</td><td>Alice</td><td><span class="status-pill st-done">Done</span></td><td><span class="pri-pill pr-high">High</span></td><td class="mono num">2</td></tr>
+<tr><td class="mono">PROJ-104</td><td>Unit tests risk analyser</td><td>Charlie</td><td><span class="status-pill st-todo">To Do</span></td><td><span class="pri-pill pr-med">Medium</span></td><td class="mono num">3</td></tr>
+<tr><td class="mono">PROJ-106</td><td>CI/CD pipeline staging</td><td>Bob</td><td><span class="status-pill st-blocked">Blocked</span></td><td><span class="pri-pill pr-high">High</span></td><td class="mono num">5</td></tr>
+<tr><td class="mono">PROJ-107</td><td>Vector search optimisation</td><td>Charlie</td><td><span class="status-pill st-todo">To Do</span></td><td><span class="pri-pill pr-med">Medium</span></td><td class="mono num">4</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <div class="card-title">Risk register <span class="count">3</span></div>
+      <div class="risk-row"><span class="risk-dot ri-high"></span><span class="risk-text">PROJ-106 blocked on external DevOps team</span><span class="risk-impact ri-high">HIGH</span></div>
+<div class="risk-row"><span class="risk-dot ri-med"></span><span class="risk-text">Alice leave July 14-15 reduces capacity</span><span class="risk-impact ri-med">MEDIUM</span></div>
+<div class="risk-row"><span class="risk-dot ri-low"></span><span class="risk-text">Flaky CI tests at 8 percent failure rate</span><span class="risk-impact ri-low">LOW</span></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Team <span class="count">4</span></div>
+      <div class="team-row"><div class="avatar" style="background:#5B7A9922;color:#5B7A99;border-color:#5B7A9955">AC</div><div><div class="team-name">Alice Chen</div><div class="team-role">Backend Engineer</div></div></div>
+<div class="team-row"><div class="avatar" style="background:#3F6B3F22;color:#3F6B3F;border-color:#3F6B3F55">BK</div><div><div class="team-name">Bob Kumar</div><div class="team-role">Frontend Engineer</div></div></div>
+<div class="team-row"><div class="avatar" style="background:#B68A2E22;color:#B68A2E;border-color:#B68A2E55">CS</div><div><div class="team-name">Charlie Singh</div><div class="team-role">QA Engineer</div></div></div>
+<div class="team-row"><div class="avatar" style="background:#A6593C22;color:#A6593C;border-color:#A6593C55">DP</div><div><div class="team-name">Diana Patel</div><div class="team-role">Product Manager</div></div></div>
+    </div>
+  </div>
+  <div class="cols">
+    <div class="card">
+      <div class="card-title">Recent decisions <span class="count">3</span></div>
+      <div class="decision-row"><div class="decision-date mono">2026-06-22</div><div><div class="decision-text">TF-IDF vector store for MVP</div><div class="decision-rationale">no external dependency required</div></div></div>
+<div class="decision-row"><div class="decision-date mono">2026-06-20</div><div><div class="decision-text">OAuth2 with Google provider</div><div class="decision-rationale">faster delivery, better security</div></div></div>
+<div class="decision-row"><div class="decision-date mono">2026-06-15</div><div><div class="decision-text">Use PostgreSQL over MongoDB</div><div class="decision-rationale">structured queries for sprint metrics</div></div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Project facts <span class="count">3</span></div>
+      <div class="fact-row"><span class="fact-bullet">&rsaquo;</span>Sprint 13 runs from July 21 to August 1 2026. Sprint goal: ship vector search optimisation and Slack integration.</div>
+<div class="fact-row"><span class="fact-bullet">&rsaquo;</span>Sprint planning meeting: Monday July 21 2026 at 10:00 AM IST.</div>
+<div class="fact-row"><span class="fact-bullet">&rsaquo;</span>Team capacity per sprint: 36 story points.</div>
+    </div>
+  </div>
+  <footer>Generated by generate_dashboard.py &middot; Data reflects only what is stored in long-term memory at generation time</footer>
+</div>
+</body>
+</html>

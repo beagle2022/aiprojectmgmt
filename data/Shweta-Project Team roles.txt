@@ -1,0 +1,17 @@
+Project Team/ roles with a sample project :
+
+Nathan - Project Manager
+Chris - Product Owner
+Josh - Business Analyst (one who does SIT testing)
+Natalie - Scrum Master
+George - Project Lead
+Mona - QA Lead
+Steffie - Python Developer -1
+Martin - DataAnalyst
+Julia - Python Developer-2
+Sophia - QA Team member
+Jack - QA Team member
+
+Project PRJ150626: To create a Credit Risk Assessment and Scoring Optimisation tool.
+
+Goal: To evaluate the likelihood of a loan applicant defaulting on their payments. This helps the bank optimize its lending criteria, ensuring they approve creditworthy applicants while minimizing non-performing assets (NPAs).
