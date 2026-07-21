@@ -31,6 +31,7 @@ from copilot.agents import AGENT_REGISTRY, BaseAgent
 from copilot.config import Config
 from copilot.memory import MemoryManager
 from copilot.guardrails import SecurityPipeline
+from copilot.token_tracker import TokenTracker
 
 # ── Intent → agent mapping ────────────────────────────────────────────────────
 
@@ -67,6 +68,7 @@ class Orchestrator:
             name: cls(config) for name, cls in AGENT_REGISTRY.items()
         }
         self.security = SecurityPipeline()
+        self.tracker = TokenTracker()
 
     # ── Main entry point ──────────────────────────────────────────────────
 
@@ -134,6 +136,12 @@ class Orchestrator:
             max_tokens=256,
             system=INTENT_SYSTEM_PROMPT,
             messages=messages,
+        )
+        self.tracker.record(
+            agent="orchestrator_router",
+            model=self.config.reasoning_model,
+            input_tokens=resp.usage.input_tokens,
+            output_tokens=resp.usage.output_tokens,
         )
         raw = resp.content[0].text.strip()
         try:
@@ -213,6 +221,12 @@ class Orchestrator:
             system=system,
             messages=messages,
         )
+        self.tracker.record(
+            agent="orchestrator_aggregator",
+            model=self.config.reasoning_model,
+            input_tokens=resp.usage.input_tokens,
+            output_tokens=resp.usage.output_tokens,
+        )
         return resp.content[0].text.strip()
 
     # ── Review gate ───────────────────────────────────────────────────────
@@ -256,6 +270,12 @@ class Orchestrator:
             max_tokens=512,
             system=system,
             messages=messages,
+        )
+        self.tracker.record(
+            agent="orchestrator_direct",
+            model=self.config.reasoning_model,
+            input_tokens=resp.usage.input_tokens,
+            output_tokens=resp.usage.output_tokens,
         )
         return resp.content[0].text.strip()
 

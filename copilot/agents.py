@@ -28,6 +28,7 @@ import anthropic
 
 from copilot.config import Config
 from copilot.tools import ToolRegistry
+from copilot.token_tracker import TokenTracker
 
 class BaseAgent(ABC):
     """All specialist agents inherit from this."""
@@ -39,6 +40,7 @@ class BaseAgent(ABC):
         self.config = config
         self.client = anthropic.Anthropic(api_key=config.anthropic_api_key)
         self.tools = ToolRegistry(config)   # shared tool registry
+        self.tracker = TokenTracker()        # token usage tracking
 
     # ── Public ────────────────────────────────────────────────────────────
 
@@ -78,6 +80,13 @@ class BaseAgent(ABC):
             max_tokens=1024,
             system=system,
             messages=messages,
+        )
+        # Record token usage
+        self.tracker.record(
+            agent=self.name,
+            model=model,
+            input_tokens=response.usage.input_tokens,
+            output_tokens=response.usage.output_tokens,
         )
         return response.content[0].text.strip()
 
