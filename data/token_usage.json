@@ -1,0 +1,142 @@
+[
+  {
+    "ts": "2026-07-21T03:38:46.623746+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 393,
+    "output_tokens": 22,
+    "total_tokens": 415,
+    "cost_usd": 0.001509,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T03:38:50.646825+00:00",
+    "agent": "orchestrator_direct",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 197,
+    "output_tokens": 115,
+    "total_tokens": 312,
+    "cost_usd": 0.002316,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T03:39:10.272692+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 394,
+    "output_tokens": 22,
+    "total_tokens": 416,
+    "cost_usd": 0.001512,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T03:39:15.334094+00:00",
+    "agent": "orchestrator_direct",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 317,
+    "output_tokens": 186,
+    "total_tokens": 503,
+    "cost_usd": 0.003741,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T03:39:45.468071+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 386,
+    "output_tokens": 62,
+    "total_tokens": 448,
+    "cost_usd": 0.002088,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T03:39:52.125084+00:00",
+    "agent": "standup",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 1573,
+    "output_tokens": 204,
+    "total_tokens": 1777,
+    "cost_usd": 0.007779,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:05:33.594094+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 389,
+    "output_tokens": 68,
+    "total_tokens": 457,
+    "cost_usd": 0.002187,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:05:55.269884+00:00",
+    "agent": "risk_analyst",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 1618,
+    "output_tokens": 1011,
+    "total_tokens": 2629,
+    "cost_usd": 0.020019,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:06:05.846983+00:00",
+    "agent": "standup",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 1610,
+    "output_tokens": 289,
+    "total_tokens": 1899,
+    "cost_usd": 0.009165,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:08:12.111644+00:00",
+    "agent": "orchestrator_aggregator",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 1418,
+    "output_tokens": 1024,
+    "total_tokens": 2442,
+    "cost_usd": 0.019614,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:49:30.087577+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 381,
+    "output_tokens": 22,
+    "total_tokens": 403,
+    "cost_usd": 0.001473,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-21T15:49:34.804904+00:00",
+    "agent": "orchestrator_direct",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 1226,
+    "output_tokens": 147,
+    "total_tokens": 1373,
+    "cost_usd": 0.005883,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-22T02:51:29.213682+00:00",
+    "agent": "orchestrator_router",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 387,
+    "output_tokens": 24,
+    "total_tokens": 411,
+    "cost_usd": 0.001521,
+    "user": "unknown"
+  },
+  {
+    "ts": "2026-07-22T02:51:31.495975+00:00",
+    "agent": "orchestrator_direct",
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 196,
+    "output_tokens": 38,
+    "total_tokens": 234,
+    "cost_usd": 0.001158,
+    "user": "unknown"
+  }
+]

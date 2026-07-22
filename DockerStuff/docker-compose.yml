@@ -1,0 +1,71 @@
+version: "3.9"
+
+services:
+
+  # ── Main copilot service ───────────────────────────────────────────────────
+  copilot:
+    image: ai-pm-copilot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: ai_pm_copilot
+
+    # Interactive terminal — required for the chat prompt
+    stdin_open: true
+    tty: true
+
+    # Environment — reads from your .env file
+    # Never hardcode secrets here; use .env or Docker secrets
+    env_file:
+      - .env
+
+    # Volume — persists LTM, users, sessions across container restarts
+    volumes:
+      - copilot_data:/app/data
+
+    # Restart unless manually stopped
+    restart: unless-stopped
+
+    # Override command examples:
+    #   docker-compose run copilot python main.py          (skip MFA)
+    #   docker-compose run copilot python login.py --add-user
+    #   docker-compose run copilot python ingest.py
+    #   docker-compose run copilot python generate_dashboard.py
+    command: ["python", "login.py"]
+
+
+  # ── One-off: run tests ────────────────────────────────────────────────────
+  tests:
+    image: ai-pm-copilot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - copilot_data:/app/data
+    command: ["python", "-m", "pytest", "tests/", "-v"]
+    profiles:
+      - test      # only runs with: docker-compose --profile test up tests
+
+
+  # ── One-off: generate HTML dashboard ─────────────────────────────────────
+  dashboard:
+    image: ai-pm-copilot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - copilot_data:/app/data
+      - ./reports:/app/reports   # dashboard HTML written here
+    command: ["python", "generate_dashboard.py", "--out", "reports/dashboard.html"]
+    profiles:
+      - dashboard
+
+
+volumes:
+  copilot_data:
+    driver: local
